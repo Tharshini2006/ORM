@@ -29,8 +29,8 @@ Execute Django admin and create details for 10 books
     
     models.py
 
-   from django.db import models
-   from django.contrib import admin
+    from django.db import models
+    from django.contrib import admin
 
     class Movie(models.Model):
     user_id = models.CharField(max_length=20, help_text="User ID")
