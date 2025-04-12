@@ -19,20 +19,20 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-'''
-admin.py
+      '''
+    admin.py
 
-from django.contrib import admin
-from .models import Movie,MovieAdmin
+    from django.contrib import admin
+    from .models import Movie,MovieAdmin
 
-admin.site.register(Movie,MovieAdmin)
+    admin.site.register(Movie,MovieAdmin)
+    
+    models.py
 
-models.py
+   from django.db import models
+   from django.contrib import admin
 
-from django.db import models
-from django.contrib import admin
-
-class Movie(models.Model):
+    class Movie(models.Model):
     user_id = models.CharField(max_length=20, help_text="User ID")
     user_name = models.CharField(max_length=100)
     email_id = models.EmailField()
@@ -41,9 +41,9 @@ class Movie(models.Model):
     show_datetime = models.DateTimeField()
     no_of_seats = models.IntegerField()
 
-class MovieAdmin(admin.ModelAdmin):
-    list_display = ('user_id', 'user_name', 'email_id', 'phone_number', 'movie_name', 'show_datetime', 'no_of_seats')
-'''
+    class MovieAdmin(admin.ModelAdmin):
+      list_display = ('user_id', 'user_name', 'email_id', 'phone_number', 'movie_name', 'show_datetime', 'no_of_seats')
+     '''
 
 
 
