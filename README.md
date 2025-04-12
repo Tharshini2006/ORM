@@ -19,7 +19,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-      '''
+```
     admin.py
 
     from django.contrib import admin
@@ -43,10 +43,7 @@ Execute Django admin and create details for 10 books
 
     class MovieAdmin(admin.ModelAdmin):
       list_display = ('user_id', 'user_name', 'email_id', 'phone_number', 'movie_name', 'show_datetime', 'no_of_seats')
-     '''
-
-
-
+```
 ## OUTPUT
 ![alt text](<WhatsApp Image 2025-04-12 at 12.52.57_32a65032.jpg>)
 
